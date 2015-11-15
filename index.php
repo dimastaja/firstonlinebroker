@@ -3,11 +3,27 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Первый онлайн брокер</title>
+    
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    
+    <!-- Jquery UI-->
+    <link href="/jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+    <script src="/jquery-ui/jquery-ui.min.js"></script>
+    <!-- END Jquery UI-->
+    
     <!-- BOOTSTRAP-->
-     <!-- END BOOTSTRAP-->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+    <!-- END BOOTSTRAP-->
+    
+    <script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body>
     <h1>Первый онлайн брокерр</h1>
+    
+
+    
 </body>
 </html>
 
