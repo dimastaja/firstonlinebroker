@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "firstonlinebroker/public_html/webstat"
+AuthUserFile /home/www/etc/549044.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

@@ -100,14 +100,20 @@ foreach($arMatchInv as $cell => $value)
 $objWriter = PHPExcel_IOFactory::createWriter($excel2, 'Excel2007');
 $objWriter->save("upload/docs/new_invoice_$id.xlsx");
 
-// конвертация в pdf unoconv -f pdf some-document.xls  /home/www/firstonlinebroker/public_html/
-// и дальше просто exec сохраняется все там же, меняем расширение - профит!
+// РєРѕРЅРІРµСЂС‚Р°С†РёСЏ РІ pdf unoconv -f pdf some-document.xls  /home/www/firstonlinebroker/public_html/
+// Рё РґР°Р»СЊС€Рµ РїСЂРѕСЃС‚Рѕ exec СЃРѕС…СЂР°РЅСЏРµС‚СЃСЏ РІСЃРµ С‚Р°Рј Р¶Рµ, РјРµРЅСЏРµРј СЂР°СЃС€РёСЂРµРЅРёРµ - РїСЂРѕС„РёС‚!
 
 echo '</br></br>';
-printr("Спасибо! В ближайшее время наш менеджер свяжется с Вами.");
-echo "<p><a id='app_link' class='btn btn-success' href='/upload/docs/new_app_$id.xlsx' target='_blank'>Скачать анкету</a></p>";
-echo "<p><a id='app_link' class='btn btn-success' href='/upload/docs/new_policy_$id.xlsx' target='_blank'>Скачать полис</a></p>";
-echo "<p><a id='app_link' class='btn btn-success' href='/upload/docs/new_invoice_$id.xlsx' target='_blank'>Скачать счет</a></p>";
+printr("РЎРїР°СЃРёР±Рѕ! Р’ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ РЅР°С€ РјРµРЅРµРґР¶РµСЂ СЃРІСЏР¶РµС‚СЃСЏ СЃ Р’Р°РјРё.");
+echo "<p><a id='app_link' class='btn btn-success' href='/upload/docs/new_app_$id.xlsx' target='_blank'>РЎРєР°С‡Р°С‚СЊ Р°РЅРєРµС‚Сѓ</a></p>";
+
+shell_exec("unoconv -f pdf /home/www/firstonlinebroker/public_html/upload/docs/new_policy_$id.xlsx");
+//printr("unoconv -f pdf /home/www/firstonlinebroker/public_html/upload/docs/new_policy_$id.xlsx");
+echo "<p><a id='app_link' class='btn btn-success' href='/upload/docs/new_policy_$id.pdf' target='_blank'>РЎРєР°С‡Р°С‚СЊ РїРѕР»РёСЃ</a></p>";
+
+shell_exec("unoconv -f pdf /home/www/firstonlinebroker/public_html/upload/docs/new_invoice_$id.xlsx");
+
+echo "<p><a id='app_link' class='btn btn-success' href='/upload/docs/new_invoice_$id.pdf' target='_blank'>РЎРєР°С‡Р°С‚СЊ СЃС‡РµС‚</a></p>";
 
 
 function printr($arr)

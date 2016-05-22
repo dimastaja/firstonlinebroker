@@ -1,0 +1,156 @@
+.nav.navbar-nav li
+{
+    width:150px;
+    text-align:center
+}
+.navbar  .container
+{
+    padding:0px;
+}
+li.dropdown.active
+{
+    background:none;
+}
+.navbar-nav > li > a.dropdown-toggle 
+{
+    padding:0px;
+    width:50px;
+    background:#67B0D1!important;
+}
+.navbar-nav > li > a.dropdown-toggle:hover
+{
+    background:#67B0D1;
+}
+.dropdown-toggle img
+{
+    padding-top: 6px; height: 37px; margin-top: 4px;
+}
+div.navbar
+{
+    padding-top:0px;
+}
+.section
+{
+    padding-top:70px;
+}
+#intro.intro {
+    padding-top: 70px;
+   
+    margin: auto;
+}
+.prod_wrapper
+{
+     width:945px;
+     margin: auto;
+}
+ .intro-block
+{
+    margin:10px 10px;
+    display:inline-block;
+    width:450px;
+    height:300px;
+    position:relative;
+}
+.intro-block-label
+{
+    background-color: rgba(0, 0, 0, 0.35);
+    position:absolute;
+    width:450px;
+    bottom:0;
+    height:40px;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+    line-height:40px;
+    
+}
+.no-left-margin
+{
+    margin-left:0px!important;
+}
+.ins-wrapper
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:1230px;
+}
+.ins-section .prod_wrapper
+{
+     float:left;
+     margin-left:145px;
+}
+.ins-section  .intro-block
+{
+    float:left;
+    
+}
+
+.ins-section  .right-button-wrapper
+{
+    float:right;
+    width: 135px;
+    padding-top:133px;
+}
+.right-button-wrapper .btn-skin
+{
+    width:130px;
+    height:50px;
+    margin-bottom:12px;
+}
+.btn-order
+{
+    margin-top:20px;
+    background-color:#d9534f;
+    border-color:#d9534f
+}
+
+h4
+{
+    margin-bottom:15px;
+}
+.clear
+{
+    clear:both;
+}
+.footer-menu
+{
+    margin-bottom:45px;
+}
+.footer-menu-block
+{
+    
+    width:250px;
+    margin-right:20px;
+    float:left;
+    text-align:left;
+    
+}
+.footer-menu-block a
+{
+    color:white;
+    display:inline-block;
+   
+    
+}
+.footer-menu-block a:hover
+{
+    text-decoration:underline;
+    
+}
+.footer-menu-main-link
+{
+    text-transform: uppercase;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.form-wrapper
+{
+    padding-top:70px;
+    width:1000px;
+    margin:auto;
+}
+.form-wrapper .col-sm-2
+{
+    width:25%;
+}
